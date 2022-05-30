@@ -1,0 +1,78 @@
+DESAFIOS JAVASCRIPT :
+
+  Desafio 1
+
+let input = gets();
+
+let qtdEntradas = parseInt(input);
+let nivelEnergia;
+
+for(let i = 0; i < qtdEntradas; i++){
+    input = gets();
+    nivelEnergia = parseInt(input);
+    
+    if(nivelEnergia > 8000      ){
+        print ('Mais de 8000!');     
+    }else{
+        print('Inseto!');
+    }
+}
+
+
+  Desafio 2
+
+const A = parseInt(gets());
+const B = parseInt(gets());
+const total = [(B/2)*(A+B)];
+print(total);
+
+
+  Desafio 3
+
+let input = gets()
+
+let qtdEntradas = parseInt(input)
+let melhor = 999
+
+for(let i = 0; i < qtdEntradas; i++){
+    
+    input = gets()
+    let tempo = parseFloat(input)
+    if (tempo < melhor ) {
+      melhor = tempo;
+    }
+}
+print(melhor)
+
+
+  Desafio 4
+
+var array = [2, 3, 5, 7, 11, 13, 18, 34]
+
+for (let i = 0; i < array.length; i++) {
+  if (array[i] % 2 == 0) {
+    print(array[i])
+  }
+}
+
+
+  Desafio 5
+
+let lines = gets().split('\n')
+
+var numberOfMatches = parseInt(lines.shift)
+
+let n = parseInt(lines.shift())
+let totalMatches = 0
+while (n > 1) {
+  if (n % 2 == 0) {
+    numberOfMatches = n / 2
+    n = n / 2
+    totalMatches += numberOfMatches
+  } else {
+    numberOfMatches = (n - 1) / 2
+    n = (n - 1) / 2 + 1
+    totalMatches += numberOfMatches
+  }
+}
+
