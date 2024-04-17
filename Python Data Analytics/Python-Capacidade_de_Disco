@@ -1,0 +1,17 @@
+# Calcule a nova capacidade do disco de Mithril
+def calcular_nova_capacidade(capacidade_atual, aumento_percentual):
+    aumento_absoluto = capacidade_atual * (aumento_percentual / 100)
+    nova_capacidade = capacidade_atual + aumento_absoluto
+    return nova_capacidade
+
+# Entrada dos valores de capacidade atual e aumento percentual
+capacidade_atual, aumento_percentual = map(int, input().split())
+
+# Chamada da função para calcular a nova capacidade total
+nova_capacidade = calcular_nova_capacidade(capacidade_atual, aumento_percentual)
+
+# Converter o valor para um número inteiro
+nova_capacidade_int = int(nova_capacidade)
+
+# Imprima a nova capacidade
+print(nova_capacidade_int)
